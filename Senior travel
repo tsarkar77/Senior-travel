@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Safe Travels - Senior Friendly Travel Planning</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#f9f506",
+                        "brand-green": "#047857", 
+                        "brand-green-hover": "#059669",
+                        "background-light": "#fcfcf8",
+                        "background-dark": "#23220f",
+                        "text-main": "#1c1c0d",
+                        "text-sub": "#4a4a40",
+                        "border-color": "#f4f4e6",
+                    },
+                    fontFamily: {
+                        "display": ["Spline Sans", "sans-serif"]
+                    },
+                    borderRadius: {"DEFAULT": "1rem", "lg": "2rem", "xl": "3rem", "full": "9999px"},
+                },
+            },
+        }
+    </script>
+<style>body {
+            font-size: 18px;}
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 0,
+          'wght' 400,
+          'GRAD' 0,
+          'opsz' 24
+        }.no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark text-text-main dark:text-white antialiased overflow-x-hidden">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="w-full border-b border-solid border-border-color bg-background-light dark:bg-background-dark dark:border-[#3a3a2e] px-4 md:px-10 py-5 sticky top-0 z-50">
+<div class="mx-auto max-w-[1280px] flex items-center justify-between">
+<div class="flex items-center gap-3 text-brand-green dark:text-brand-green-hover shrink-0">
+<h2 class="text-2xl md:text-3xl font-bold leading-tight tracking-[-0.015em] text-brand-green dark:text-[#10b981]">SafarSaathi</h2>
+</div>
+<nav class="hidden lg:flex items-center gap-8 xl:gap-12">
+<a class="text-text-sub dark:text-gray-300 hover:text-brand-green dark:hover:text-white font-semibold text-lg transition-colors" href="#">Home</a>
+<a class="text-text-sub dark:text-gray-300 hover:text-brand-green dark:hover:text-white font-semibold text-lg transition-colors" href="#">Insurance</a>
+<a class="text-text-sub dark:text-gray-300 hover:text-brand-green dark:hover:text-white font-semibold text-lg transition-colors" href="#">Packages</a>
+<a class="text-text-sub dark:text-gray-300 hover:text-brand-green dark:hover:text-white font-semibold text-lg transition-colors" href="#">Contact Us</a>
+</nav>
+<div class="flex items-center gap-4">
+<div class="hidden sm:flex items-center gap-3 bg-[#f4f4e6] dark:bg-[#3a3a2e] px-3 py-1.5 rounded-full mr-2">
+<button aria-label="Decrease font size" class="text-text-main dark:text-white text-sm font-semibold hover:text-brand-green transition-colors">A-</button>
+<div class="w-px h-3 bg-gray-300 dark:bg-gray-600"></div>
+<button aria-label="Increase font size" class="text-text-main dark:text-white text-base font-bold hover:text-brand-green transition-colors">A+</button>
+</div>
+<button class="flex h-12 min-w-[140px] cursor-pointer items-center justify-center rounded-full bg-brand-green hover:bg-brand-green-hover transition-colors text-white px-6 text-base font-bold leading-normal tracking-[0.015em] shadow-sm">
+            Manage Bookings
+        </button>
+<button class="lg:hidden p-2 text-text-main dark:text-white">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex-1 flex flex-col">
+<section class="flex-1 py-12 md:py-16 px-4 md:px-10">
+<div class="mx-auto max-w-[1280px]">
+<div class="flex flex-col items-center text-center">
+<div class="flex flex-col gap-8 max-w-[900px] items-center mb-12">
+<div class="flex flex-col gap-4">
+<h1 class="text-text-main dark:text-white text-4xl md:text-5xl lg:text-7xl font-black leading-[1.1] tracking-[-0.02em]">
+                                    Explore India with <br class="hidden md:block"/>
+<span class="relative inline-block">
+                                        Comfort
+                                        <svg class="absolute w-full h-3 -bottom-1 left-0 text-primary -z-10 opacity-60" preserveAspectRatio="none" viewBox="0 0 100 10">
+<path d="M0 5 Q 50 10 100 5" fill="none" stroke="currentColor" stroke-width="8"></path>
+</svg>
+</span> 
+                                    and Confidence.
+                                </h1>
+<p class="text-text-sub dark:text-gray-300 text-xl md:text-2xl font-normal leading-relaxed max-w-[700px] mx-auto mt-4">
+                                    Travel planning designed for seniors. We handle the stairs, the safety, and the details, so you can enjoy the journey without worry.
+                                </p>
+</div>
+<div class="flex flex-col sm:flex-row gap-4 mt-2 justify-center w-full">
+<button class="flex h-14 cursor-pointer items-center justify-center rounded-full bg-primary hover:bg-[#e6e205] transition-all text-[#1c1c0d] px-8 text-lg font-bold leading-normal shadow-sm hover:shadow-md transform hover:-translate-y-0.5 w-full sm:w-auto min-w-[240px]">
+                                    Plan a trip safely
+                                </button>
+<button class="flex h-14 cursor-pointer items-center justify-center rounded-full bg-white dark:bg-background-dark border-2 border-text-main dark:border-white/20 hover:border-primary dark:hover:border-primary text-text-main dark:text-white hover:text-primary dark:hover:text-primary transition-all px-8 text-lg font-bold leading-normal w-full sm:w-auto min-w-[240px]">
+                                    Talk to a travel assistant
+                                </button>
+</div>
+<div class="flex flex-wrap justify-center items-center gap-6 text-base text-text-sub dark:text-gray-400 mt-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600 dark:text-green-400">check_circle</span>
+<span>Free cancellation</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600 dark:text-green-400">check_circle</span>
+<span>Senior-verified stays</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-green-600 dark:text-green-400">check_circle</span>
+<span>24/7 Assistance</span>
+</div>
+</div>
+</div>
+<div class="w-full relative group">
+<div class="absolute left-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex">
+<button aria-label="Previous slide" class="bg-white/90 dark:bg-black/60 p-3 rounded-full shadow-lg hover:bg-white dark:hover:bg-black/80 text-text-main dark:text-white transition-all transform hover:scale-110">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+</div>
+<div class="flex overflow-x-auto gap-6 pb-8 snap-x snap-mandatory no-scrollbar px-4 md:px-0">
+<div class="flex-none w-[85vw] md:w-[600px] snap-center">
+<div class="relative aspect-[16/9] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+<div class="absolute inset-0 bg-black/10 hover:bg-black/0 transition-colors z-10"></div>
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB2zt4TZAgvrnDCpzoRtiqStBQxU_Pl72-sIEDd8TWIugvgsmwh76qV94Z6g-l0jb1y5k71bPTR0ilVx4jI7fBviARLa-cLLhNCz3HSde3lv3AhEGfmr2cTwhKEawnFTfZeLo5RsY9H3srKA9aN13MjitFpnfDOiNZkhbeGnW7CTX2GwX2h15uIyqyS-sdv5_kwvPb3_lr-jNc8YRh5vXA0Euvd8wopukgeZnZwIvaTHN62RCj5JSMpHGb7ae_OGBYrEpCLzX0akXE");'></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent z-20">
+<h3 class="text-white text-xl font-bold">Peaceful Agra</h3>
+<p class="text-white/90 text-sm">Wheelchair accessible viewing points</p>
+</div>
+</div>
+</div>
+<div class="flex-none w-[85vw] md:w-[600px] snap-center">
+<div class="relative aspect-[16/9] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+<div class="absolute inset-0 bg-black/10 hover:bg-black/0 transition-colors z-10"></div>
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBg7a5rStoixpWgPmAkFa2XOQcR1nDP-UIEmAhmRKvqs4lDXgUsR7oVUz4u6qeejCvyVbmFVT55iaHfv5Ylp9FQZkZ0AnO-E2TVmDLsEck6YeWAPAadmVRzLoI_vl3grsShzo2IaqZbW5vNLA42H8O_naO5Mr26R8Ez6unjV-CXTAaWALmtpIB4NvR454Mj9xAfEyXsw4vG0Dew29mSDNHf2SjW2OZsCc0gRulu7qR_mHUxzlrPdI9XlC5DOEWj4ZncSSVDQXxcELc");'></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent z-20">
+<h3 class="text-white text-xl font-bold">Serene Kerala Backwaters</h3>
+<p class="text-white/90 text-sm">Houseboats with senior-friendly amenities</p>
+</div>
+</div>
+</div>
+<div class="flex-none w-[85vw] md:w-[600px] snap-center">
+<div class="relative aspect-[16/9] rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
+<div class="absolute inset-0 bg-black/10 hover:bg-black/0 transition-colors z-10"></div>
+<div class="w-full h-full bg-cover bg-center hover:scale-105 transition-transform duration-700" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBjRwXKvlV4dIjioAR1R6G27mnaNHg8j09FKqoo3sq82wRy2_LnPZHnOzETm6N9qU9CFIeHYefnYoPARcTDtd5Mto3twSbwNScKtYhlqYZWNnfFloyt5QhXqKDyvwozpzmOE1h1-r-163KcgkhNReGN9OJwG_44YEiHX0_uZg8W_TtLcjlWRPeCCw2kPdsdUtxjuMo3a1-levJ1Kzd2ywyiS4ZonB5H1eqWbfFqcmq014T_05KwMMbTyiahxV3PcDz408-h1T4gq68");'></div>
+<div class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-black/80 to-transparent z-20">
+<h3 class="text-white text-xl font-bold">Jaipur Palaces</h3>
+<p class="text-white/90 text-sm">Elevator access to royal suites</p>
+</div>
+</div>
+</div>
+</div>
+<div class="absolute right-0 top-1/2 -translate-y-1/2 z-10 hidden md:flex">
+<button aria-label="Next slide" class="bg-white/90 dark:bg-black/60 p-3 rounded-full shadow-lg hover:bg-white dark:hover:bg-black/80 text-text-main dark:text-white transition-all transform hover:scale-110">
+<span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-[#f4f4e6]/30 dark:bg-[#2a2915] py-16 px-4 md:px-10">
+<div class="mx-auto max-w-[1280px]">
+<div class="mb-12 text-center">
+<h2 class="text-text-main dark:text-white text-3xl md:text-4xl font-bold leading-tight mb-4">Why travel with us?</h2>
+<p class="text-text-sub dark:text-gray-300 text-lg max-w-[720px] mx-auto">We prioritize your safety and comfort above all else, verifying every detail personally.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="flex flex-col gap-4 rounded-xl border border-border-color dark:border-[#3a3a2e] bg-background-light dark:bg-background-dark p-8 hover:shadow-lg transition-shadow text-center items-center">
+<div class="size-14 rounded-full bg-primary/20 flex items-center justify-center text-[#8a8704] dark:text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">accessible</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-main dark:text-white text-xl font-bold">Wheelchair Accessible</h3>
+<p class="text-text-sub dark:text-gray-400 text-base leading-relaxed">Every location is vetted for easy access. No surprise stairs or steep inclines.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-border-color dark:border-[#3a3a2e] bg-background-light dark:bg-background-dark p-8 hover:shadow-lg transition-shadow text-center items-center">
+<div class="size-14 rounded-full bg-primary/20 flex items-center justify-center text-[#8a8704] dark:text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">verified_user</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-main dark:text-white text-xl font-bold">Verified Hotels</h3>
+<p class="text-text-sub dark:text-gray-400 text-base leading-relaxed">We personally check hotels for hygiene, elevator access, and senior-friendly bathrooms.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-border-color dark:border-[#3a3a2e] bg-background-light dark:bg-background-dark p-8 hover:shadow-lg transition-shadow text-center items-center">
+<div class="size-14 rounded-full bg-primary/20 flex items-center justify-center text-[#8a8704] dark:text-primary">
+<span class="material-symbols-outlined" style="font-size: 32px;">support_agent</span>
+</div>
+<div class="flex flex-col gap-2">
+<h3 class="text-text-main dark:text-white text-xl font-bold">24/7 Human Support</h3>
+<p class="text-text-sub dark:text-gray-400 text-base leading-relaxed">Real humans available to help you anytime. Just one click to talk to us.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer class="border-t border-border-color dark:border-[#3a3a2e] bg-background-light dark:bg-background-dark py-12 px-4 md:px-10">
+<div class="mx-auto max-w-[1280px] flex flex-col items-center justify-center gap-8">
+<div class="flex flex-wrap items-center justify-center gap-x-12 gap-y-4">
+<a class="text-text-sub dark:text-gray-400 hover:text-primary transition-colors text-lg font-medium" href="#">About Us</a>
+<a class="text-text-sub dark:text-gray-400 hover:text-primary transition-colors text-lg font-medium" href="#">Contact Support</a>
+<a class="text-text-sub dark:text-gray-400 hover:text-primary transition-colors text-lg font-medium" href="#">Privacy Policy</a>
+<a class="text-text-sub dark:text-gray-400 hover:text-primary transition-colors text-lg font-medium" href="#">Terms of Service</a>
+</div>
+<div class="flex items-center gap-2 opacity-50">
+<div class="size-6 text-text-main dark:text-white flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">flight_takeoff</span>
+</div>
+<span class="text-text-sub dark:text-gray-500 text-sm">© 2024 Safe Travels. Built with care.</span>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
